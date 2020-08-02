@@ -1,0 +1,12 @@
+### Application context initializer
+org.springframework.context.ApplicationContextInitializer=\
+	com.example.demo.core.trace.init.TraceApplicationContextInitializer
+### ApplicationListener
+org.springframework.context.ApplicationListener=\
+  com.example.demo.core.trace.listener.TraceApplicationListener
+### ApplicationRunListener
+org.springframework.boot.SpringApplicationRunListener=\
+  com.example.demo.core.trace.listener.TraceApplicationRunListener
+### PostProcessEnvironment
+org.springframework.boot.env.EnvironmentPostProcessor=\
+  com.example.demo.core.trace.environment.TraceEnvironmentPostProcessor

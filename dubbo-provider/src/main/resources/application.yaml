@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: dubbo-provider
+server:
+  port: 9091
+dubbo:
+  scan:
+    base-packages: com.example.demo.dubbo.provider.service
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://119.45.62.158:8848
+  cloud:
+    subscribed-services: null

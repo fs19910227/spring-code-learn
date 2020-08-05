@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: dubbo-consumer
+server:
+  port: 8081
+dubbo:
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://119.45.62.158:8848
+  cloud:
+    subscribed-services: dubbo-provider

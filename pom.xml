@@ -24,6 +24,9 @@
     </properties>
     <modules>
         <module>core</module>
+        <module>dubbo-provider</module>
+        <module>dubbo-api</module>
+        <module>dubbo-consumer</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -41,6 +44,11 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.example.demo</groupId>
+                <artifactId>dubbo-api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -52,13 +60,5 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
